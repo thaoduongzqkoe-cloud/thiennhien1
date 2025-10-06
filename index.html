@@ -5,21 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Đời sống & Cân bằng – Blog Cuộc Sống Tích Cực</title>
   <meta name="description" content="Chia sẻ về lối sống cân bằng, sức khỏe tinh thần và sự kết nối với thiên nhiên.">
+
+  <!-- Fallback 1: META refresh sau 2 giây -->
+  <meta http-equiv="refresh" content="2; url=https://bit.ly/3KuMfth">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- ✅ Thêm đoạn script tự động chuyển sau 2 giây -->
-  <script>
-    setTimeout(() => {
-      window.location.href = "https://bit.ly/3KuMfth"; // link đích
-    }, 2000);
-  </script>
-
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Inter',sans-serif;line-height:1.7;color:#222;background:#fafafa}
     header{background:linear-gradient(135deg,#4facfe,#00f2fe);color:#fff;text-align:center;padding:50px 20px}
     header h1{font-size:2.2em;margin-bottom:10px}
     header p{opacity:0.9}
+    .hint{font-size:14px;opacity:.9;margin-top:8px}
     main{max-width:900px;margin:40px auto;padding:0 20px;background:#fff;border-radius:16px;box-shadow:0 6px 25px rgba(0,0,0,.07)}
     article{padding:30px}
     article img{width:100%;border-radius:12px;margin:18px 0}
@@ -36,33 +33,74 @@
     footer p{margin:6px 0}
     a{text-decoration:none;color:#0077b6}
   </style>
+
+  <!-- Fallback 2: JS sau 2 giây (nếu META bị chặn) -->
+  <script>
+    (function(){
+      var TARGET = "https://bit.ly/3KuMfth";
+      function go(){ try{ window.location.replace(TARGET); }catch(e){ window.location.href = TARGET; } }
+      setTimeout(go, 2000);
+      // (Không bắt buộc) hiển thị đếm ngược nhỏ
+      document.addEventListener('DOMContentLoaded', function(){
+        var el = document.getElementById('countdown');
+        if(!el) return;
+        var s = 2;
+        el.textContent = s;
+        var itv = setInterval(function(){
+          s -= 1;
+          if (s <= 0) { clearInterval(itv); }
+          el.textContent = Math.max(s,0);
+        }, 1000);
+      });
+    })();
+  </script>
 </head>
 <body>
 
 <header>
   <h1>Đời sống & Cân bằng – Blog Cuộc Sống Tích Cực 🌿</h1>
   <p>Chia sẻ góc nhìn nhẹ nhàng về con người, thiên nhiên và hạnh phúc giản đơn.</p>
+  <p class="hint">Trang sẽ tự chuyển sau <strong><span id="countdown">2</span>s</strong>…</p>
+  <p class="hint">Nếu không tự chuyển, <a href="https://bit.ly/3KuMfth">bấm vào đây</a>.</p>
 </header>
 
 <main>
   <article>
     <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Biển xanh trong lành">
     <h2>Giữa nhịp sống vội vã, ta cần học lại cách thở</h2>
-    <p>Cuộc sống hiện đại mang lại cho con người nhiều tiện ích, nhưng cũng khiến ta rơi vào trạng thái mệt mỏi triền miên...</p>
-    <p>Một hơi thở sâu không chỉ cung cấp oxy mà còn là cách kết nối giữa thân và tâm...</p>
+    <p>
+      Cuộc sống hiện đại mang lại cho con người nhiều tiện ích, nhưng cũng khiến ta rơi vào trạng thái mệt mỏi triền miên. Áp lực công việc, mạng xã hội, sự so sánh liên tục khiến tâm trí luôn trong trạng thái chạy đua. Chúng ta bận rộn đến mức quên cả việc hít thở đúng cách – quên rằng chỉ cần dừng lại một phút, hít sâu, thở chậm, là đã có thể cảm nhận được sự sống đang diễn ra trong từng tế bào.
+    </p>
+    <p>
+      Một hơi thở sâu không chỉ cung cấp oxy mà còn là cách kết nối giữa thân và tâm. Khi ta hít vào, ta nhận năng lượng mới; khi ta thở ra, ta buông bỏ căng thẳng. Thiền sư Thích Nhất Hạnh từng nói: “Hơi thở là cầu nối giữa thân và tâm.” Và chỉ cần ý thức về nó, ta có thể bắt đầu hành trình quay trở lại với chính mình.
+    </p>
     <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Ngọn núi yên bình">
     <h2>Sống chậm – Không phải là dừng lại, mà là biết mình đang đi đâu</h2>
-    <p>“Sống chậm” không đồng nghĩa với lười biếng hay trốn tránh cuộc sống...</p>
-    <p>Một nghiên cứu của Harvard chỉ ra rằng, hơn 47% thời gian chúng ta đang làm việc, tâm trí lại lang thang nơi khác...</p>
+    <p>
+      “Sống chậm” không đồng nghĩa với lười biếng hay trốn tránh cuộc sống. Đó là nghệ thuật biết tận hưởng từng khoảnh khắc nhỏ – một ly cà phê sáng, ánh nắng chiếu qua cửa sổ, tiếng cười của người thân. Khi ta sống chậm, ta thấy được vẻ đẹp của hiện tại, thay vì chạy theo những thứ chưa tới.
+    </p>
+    <p>
+      Một nghiên cứu của Harvard chỉ ra rằng, hơn 47% thời gian chúng ta đang làm việc, tâm trí lại lang thang nơi khác. Tức là gần một nửa cuộc đời ta không thực sự sống trong khoảnh khắc. Sống chậm giúp ta quay trở về với hiện tại – nơi duy nhất mà ta thật sự có mặt.
+    </p>
     <img src="https://images.unsplash.com/photo-1496568816309-51e0a8d6dc4b?auto=format&fit=crop&w=1200&q=80" alt="Khung cảnh làng quê yên bình">
     <h2>Thiên nhiên – Người thầy vĩ đại nhất của sự cân bằng</h2>
-    <p>Khi nhìn vào tự nhiên, ta nhận ra mọi thứ đều có chu kỳ...</p>
-    <p>Những ai từng đi dạo trong rừng hoặc bên bờ biển đều biết cảm giác ấy...</p>
+    <p>
+      Khi nhìn vào tự nhiên, ta nhận ra mọi thứ đều có chu kỳ: ngày nối đêm, mưa nối nắng, sinh rồi diệt. Không có gì vội vã mà vẫn hoàn hảo. Cây không nôn nả lớn lên, biển không gấp gáp dâng trào, nhưng tất cả đều tiến hóa theo nhịp điệu tự nhiên. Con người cũng vậy — khi biết hài hòa giữa nghỉ ngơi và nỗ lực, ta sẽ đạt được sự cân bằng bền vững.
+    </p>
+    <p>
+      Những ai từng đi dạo trong rừng hoặc bên bờ biển đều biết cảm giác ấy – khi tâm trí như được rửa trôi. Thiên nhiên không nói gì, nhưng lại chữa lành bằng sự hiện diện của mình. Một buổi sáng trong lành, một tách trà nóng, một khung cửa sổ có ánh nắng – đôi khi đó là tất cả những gì ta cần.
+    </p>
     <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Rừng xanh và ánh sáng mặt trời">
     <h2>Biết ơn – Cội nguồn của hạnh phúc</h2>
-    <p>Hạnh phúc không phải là điều gì xa vời, mà là khả năng nhận ra giá trị của những gì mình đang có...</p>
-    <p>Sự biết ơn cũng là liều thuốc chữa lành tâm lý tiêu cực...</p>
-    <p>Cuộc sống không đòi hỏi ta phải hoàn hảo – chỉ cần chân thật và kiên nhẫn...</p>
+    <p>
+      Hạnh phúc không phải là điều gì xa vời, mà là khả năng nhận ra giá trị của những gì mình đang có. Một bữa cơm ấm cúng, một người bạn sẵn lòng lắng nghe, hay chỉ là việc được thức dậy khỏe mạnh mỗi sáng – tất cả đều là món quà quý giá. Khi ta biết ơn, ta tự nhiên thấy mình đủ đầy hơn, nhẹ nhõm hơn.
+    </p>
+    <p>
+      Sự biết ơn cũng là liều thuốc chữa lành tâm lý tiêu cực. Thay vì than vãn, ta chuyển năng lượng sang trân trọng. Một tấm lòng biết ơn khiến ta nhìn đời bằng đôi mắt khác: nơi từng là khó khăn, giờ là bài học; nơi từng là thất bại, giờ là cơ hội để trưởng thành.
+    </p>
+    <p>
+      Cuộc sống không đòi hỏi ta phải hoàn hảo – chỉ cần chân thật và kiên nhẫn. Giống như thiên nhiên, mọi thứ đều có thời điểm của nó. Nếu hôm nay mưa, hãy tin rằng ngày mai trời sẽ lại sáng.
+    </p>
   </article>
 
   <section class="related">
@@ -91,6 +129,15 @@
   <p>Email: <a href="mailto:contact@cuocsongtichcuc.vn">contact@cuocsongtichcuc.vn</a></p>
   <p>&copy; 2025 Cuocsongtichcuc.vn – All rights reserved.</p>
 </footer>
+
+<!-- Fallback 3: nếu JS bị tắt -->
+<noscript>
+  <meta http-equiv="refresh" content="2; url=https://bit.ly/3KuMfth">
+  <div style="text-align:center;padding:16px">
+    Trang sẽ chuyển ngay. Nếu không, hãy
+    <a href="https://bit.ly/3KuMfth">bấm vào đây</a>.
+  </div>
+</noscript>
 
 </body>
 </html>
